@@ -1,51 +1,24 @@
-'use strict';
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import * as Actions from '../actions';
+import Search from '../components/Search';
 
-var React = require('react');
-require('./styles/{{displayName}}.scss');
+@connect(state => ({}))
+export default class {{displayName}} extends Component {
+  static propTypes = {
+    dispatch: React.PropTypes.func.isRequired,
+  }
 
-/**
- * @module {{displayName}}
- */
-class {{displayName}} extends React.Component {
-
-    constructor(props) {
-        super(props);
-
-        this.state = {
-            exampleState : 'initial state'
-        };
-    }
-
-    componentWillMount() {
-    }
-
-    componentDidMount() {
-    }
-
-    componentWillUpdate() {
-    }
-
-    componentDidUpdate() {
-    }
-
-    componentWillUnmount() {
-    }
-
-    render() {
-        return (
-            <div></div>
-        );
-    }
+  render() {
+    const { dispatch } = this.props;
+    return (
+      <div className="panel panel-inverted">
+        <p>{{displayName}}</p>
+        <div className="panel-actions">
+        </div>
+      </div>
+    );
+  }
 }
 
-{{displayName}}.defaultProps = {
-    defaultPropGoesHere: 'default prop'
-};
-
-{{displayName}}.propTypes = {
-    example: React.PropTypes.string
-};
-
-{{displayName}}.displayName = '{{displayName}}';
-
-module.exports = {{displayName}};

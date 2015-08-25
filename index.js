@@ -54,15 +54,9 @@ var init = function(){
 
         mkdirp.sync(componentName + '/styles');
 
-        console.log('writing style directory');
-        fs.writeFile(componentName + '/styles/' + componentName + '.scss', '', function (err) {
-            if (err) return console.log(err);
-            console.log(componentName + ' > style/' + componentName + '.scss');
-        });
-
         template = template.replace(/{{displayName}}/g,capitalize(componentName));
 
-        fs.writeFile(componentName + '/' + componentName + '.js', template, function (err) {
+        fs.writeFile(componentName + '.js', template, function (err) {
             if (err) return console.log(err);
             console.log(componentName + ' > ' + componentName + '.js');
         });

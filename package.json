@@ -1,29 +1,31 @@
 {
-  "name": "react-scaffold",
-  "version": "0.1.3",
-  "description": "An npm module to create quick react components",
+  "name": "redux-scaffold",
+  "version": "0.1.0",
+  "description": "An npm module to create quick redux components",
   "main": "index.js",
   "bin": {
-    "react-scaffold": "index.js"
+    "redux-scaffold": "index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/fender-guy/react-scaffold.git"
+    "url": "https://github.com/qnm/redux-scaffold.git"
   },
   "keywords": [
     "react",
+    "redux",
     "component",
     "scaffold"
   ],
-  "author": "Jeremy Hitchcock <whatthefuture@gmail.com> (https://github.com/fender-guy)",
+  "author": "Rob Sharp <qnm@fea.st> (https://github.com/qnm)",
+  "contributors": ["Jeremy Hitchcock <whatthefuture@gmail.com> (https://github.com/fender-guy)"],
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/fender-guy/react-scaffold/issues"
+    "url": "https://github.com/qnm/redux-scaffold/issues"
   },
-  "homepage": "https://github.com/fender-guy/react-scaffold",
+  "homepage": "https://github.com/qnm/redux-scaffold",
   "dependencies": {
     "mkdirp": "^0.5.0",
     "prompt": "^0.2.14"
