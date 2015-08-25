@@ -52,8 +52,6 @@ var init = function(){
             return;
         }
 
-        mkdirp.sync(componentName + '/styles');
-
         template = template.replace(/{{displayName}}/g,capitalize(componentName));
 
         fs.writeFile(componentName + '.js', template, function (err) {
