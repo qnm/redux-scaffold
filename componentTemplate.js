@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as Actions from '../actions';
-import Search from '../components/Search';
 
 @connect(state => ({}))
 export default class {{displayName}} extends Component {

@@ -1,6 +1,6 @@
 {
   "name": "redux-scaffold",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "An npm module to create quick redux components",
   "main": "index.js",
   "bin": {
